@@ -17,7 +17,7 @@ public:
                     nodes.push(make_pair(currentNode->left, 0));
                 status = 1;
             }
-            else if (nodes.top().second==1) {
+            else if (status==1) {
                 if (currentNode->right)
                     nodes.push(make_pair(currentNode->right, 0));
                 status = 2;
